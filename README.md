@@ -2,8 +2,6 @@
 Парсер аккаунтов подписчиков и подписок в Instagram (followers-parser.js)<br>
 Парсер активной аудитории (лайки) Instagram (likes-parser.js)
 <br>
-### Поддержать развитие проекта:
-[![instagram-parser-donate](https://www.dropbox.com/s/1nxwhbmlt4c2rmi/money.png?raw=1)](https://yasobe.ru/na/instaparser)
 
 ## Как использовать парсер подписчиков и подписок:
 1. Заходим в web-браузере http://instagram.com и авторизуемся
@@ -19,11 +17,3 @@
 2. Теперь можно задавать кол-во аккаунтов для сбора (строка кода 26)
 3. Добавил возможность собирать помимо логинов, ещё и имена аккаунтов (строка кода 30)
 4. Добавил возможность изменять скорость сбора (строка кода 20)
-
-## Видео пример работы:
-
-[![instagram-parser](https://img.youtube.com/vi/HUHPDRmohPg/0.jpg)](https://www.youtube.com/watch?v=HUHPDRmohPg)
-
-www.leoneed.pro | www.instagram.com/leoneed.pro | www.vk.com/leovladivostok
-
-Подписывайтесь, ставьте лайки, до новых встреч!:v:
