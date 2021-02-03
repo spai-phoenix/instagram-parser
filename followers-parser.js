@@ -2,7 +2,6 @@ console.log('%c|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 console.log('%cПАРСЕР ПОДПИСЧИКОВ И ПОДПИСОК INSTAGRAM', 'color: #1d6ba3; font-size:24px;');
 console.log('%c||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||', 'color: #13a555; font-size:16px;');
 console.log('%c--------------------------------------------------------------------------------------', 'color: #13a555; font-size:16px;');
-console.log('%cЛеонид Залюбовский 2019 | http://www.leoneed.pro | http://Instagram.com/leoneed.pro', 'color: #1d6ba3; font-size:14px;');
 console.log('%c--------------------------------------------------------------------------------------', 'color: #13a555; font-size:16px;');
 // --------------------------------------------------------------------------------------
 try {
@@ -71,7 +70,8 @@ try {
         // Разбор имен аккаунтов
         // ------------------------------------------------------------------------------
         if (user_name == true) {
-            var result_name = accounts.match(/<div class="wFPL8 ">[^<]+/g)
+            var result_name = accounts.replace(/<div class="wFPL8 "></g, '<div class="wFPL8 ">NONE<');
+            result_name = result_name.match(/<div class="wFPL8 ">[^<]+/g)
             result_name.splice(user_count);
             result_nick = result_nick.match(/[^\n]+/g);
             result_name = result_name.join('').match(/>[^<]+/g).join('').match(/[^>]+/g).join('\n');
@@ -93,7 +93,6 @@ try {
         }
         console.log('%cАккаунтов собрано: ' + result_count + ' шт.', 'color: #13a555; font-size:18px;');
         console.log('%cВыделите собранные имена аккаунтов выше и нажмите CTRL-C, чтобы скопировать.', 'color: #13a555; font-size:16px;');
-        console.log('%cЗаходите подписывайтесь, ставьте лайки! https://Instagram.com/leoneed.pro | http://www.leoneed.pro ', 'color: #1d6ba3; font-size:14px;');
     }
     // ----------------------------------------------------------------------------------
     // ФУНКЦИЯ СКРОЛЛИНГА
